@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politician Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/Politician.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Issues</a></li>
+            <li><a href="#">Update</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li style="margin-left: auto;">
+                <a href="#"><h4>Politician <i class="fa-solid fa-user"></i></h4></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Issues Section -->
+        <div class="issues-section">
+            <h2>Issues from People</h2>
+            <div class="issues-box">
+                <div class="icon-container">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="issues-count-container">
+                    <span class="issues-count">15</span>
+                    <span class="issues-label">Issues</span>
+                </div>
+                <button class="view-issues">View Issues</button>
+            </div>
+        </div>
+        
+        <!-- Update Section -->
+        <div class="update-section">
+            <h2>Post an Update</h2>
+            <form action="#">
+                <label for="title">Title: *</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" name="venue" required>
+
+                <div class="button-container">
+                    <button type="submit" class="post-update">Post</button>
+                    <button type="reset" class="post-update">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

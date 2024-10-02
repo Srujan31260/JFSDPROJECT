@@ -1,0 +1,149 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #E3F2FD;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #335C81;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    position: relative;
+    margin-right: 10px; /* Space between menu items */
+}
+
+
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #5679A6;
+    border-radius: 5px;
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5679A6;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #A0C1D1;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #5679A6;
+    border-radius: 5px;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid #007BB5 ;
+    width: 950px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007BB5;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007BB5;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BB5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #335C81;
+}
+
+.hidden {
+    display: none;
+}
+#successMessage {
+    display: none;
+    margin-top: 20px;
+    color: green;
+}
